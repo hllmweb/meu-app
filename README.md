@@ -8,13 +8,11 @@ As técnologias que utilizei foram:
 
 # SCREEN #
 
-CADASTRO
-====================
-(http://fs5.directupload.net/images/150930/xoexogq6.png)
+1.CADASTRO
+![alt tag](http://fs5.directupload.net/images/150930/xoexogq6.png)
 
-LISTAGEM
-====================
-(http://fs5.directupload.net/images/150930/xtuv4vpx.png)
+2.LISTAGEM
+![alt tag](http://fs5.directupload.net/images/150930/xtuv4vpx.png)
 
 
 
