@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--<link rel="stylesheet" href="css/jquery.mobile-1.1.2.min.css" />
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/jquery.mobile-1.1.2.min.js"></script>-->
+		<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+		
+        <title>Cadastro de Clientes</title>
+    </head>
+    <body>
+      
+		<!--<form id="formCliente">
+			<div id="control page" data-role="page">
+			
+				<div class="control-group">
+					<div class="cad-titulo" data-role="header">
+						<span>CADASTRO DE CLIENTES</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						Nome
+					</label>
+					<div class="controls">
+						<input type="text" autofucus name="nome" id="nome" class="campos">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						CPF
+					</label>
+					<div class="controls">
+						<input type="text" name="cpf" id="cpf" class="campos">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						Rg
+					</label>
+					<div class="controls">
+						<input type="text" name="rg" id="rg" class="campos">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						Tel
+					</label>
+					<div class="controls">
+						<input type="text" placeholder="(11) 8888-8888" name="tel" id="tel" class="campos">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						Email
+					</label>
+					<div class="controls">
+						<input type="text" name="email" id="email" class="campos">
+					</div>
+				</div>
+				<div class="control-group">
+					<button onclick="salvar()" type="submit" class="btn btn-sucess"><span>SALVAR</span></button>
+				</div>
+
+				<div data-role="footer" data-position="fixed" data-id="vs_footer">
+				  <div data-role="navbar">
+                    <ul>
+                       <li><a href="#page" class="ui-icon-nodisc" data-iconshadow="false" data-icon="home">Home</a></li>
+                       <li><a href="#lista" class="ui-icon-nodisc" data-iconshadow="false" data-icon="bars">Lista</a></li>
+                       <li><a href="#nomeid" class="ui-icon-nodisc" data-iconshadow="false" data-icon="grid">Exemplo #1</a></li>
+                       <li><a href="#nomeid" class="ui-icon-nodisc" data-iconshadow="false" data-icon="filme">Exemplo #2</a></li>
+                    </ul>
+             	   </div>
+				</div>
+			</div>
+		</form>
+		<div data-role="page" id="lista">
+			<div data-role="header">
+				<h1>Page Four</h1>
+			</div>
+			<div data-role="content">	
+				Content		
+			</div>
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div>
+		</div>
+
+		-->
+
+<div data-role="page" id="page">
+	<div class="cad-titulo" data-role="header">
+		<span>Cadastro de Cliente</span>
+	</div>
+	<div data-role="content">	
+	<!--inicio do formulário de cadastro-->	
+		<form id="formCliente">
+			<div class="controls">
+				<label>Nome: </label>
+				<input type="text" autofucus name="nome" id="nome" class="campos">
+			</div>	
+			<div class="controls">
+				<label>CPF:</label>
+				<input type="text" name="cpf" id="cpf" class="campos">
+			</div>
+			<div class="controls">
+				<label>RG: </label>
+				<input type="text" name="rg" id="rg" class="campos">
+			</div>
+			<div class="controls">
+				<label>Tel: </label>
+				<input type="text" placeholder="(11) 8888-8888" name="tel" id="tel" class="campos">
+			</div>			
+			<div class="controls">
+				<label>E-Mail: </label>
+				<input type="text" name="email" id="email" class="campos">
+			</div>
+			<div class="controls">
+				<input type="submit" onclick="salvar()" class="btn btn-sucess" value="SALVAR"/>
+				<!--<button onclick="salvar()" type="submit" class="btn btn-sucess"><span>SALVAR</span></button>-->
+			</div>			
+		</form>
+	<!--fim do formulário de cadastro-->
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="vs_footer">
+		<div data-role="navbar">
+           <ul>
+	            <li><a href="#page" class="ui-icon-nodisc" data-iconshadow="false" data-icon="home">Home</a></li>
+	            <li><a href="#page2" class="ui-icon-nodisc" data-iconshadow="false" data-icon="bars">Lista</a></li>
+	            <li><a href="#nomeid" class="ui-icon-nodisc" data-iconshadow="false" data-icon="grid">Exemplo #1</a></li>
+	            <li><a href="#nomeid" class="ui-icon-nodisc" data-iconshadow="false" data-icon="filme">Exemplo #2</a></li>
+           </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div class="cad-titulo" data-role="header">
+		<span>Lista de Cadastrados</span>
+	</div>
+	<div data-role="content">	
+		<table border="1" cellspacing="0" cellpadding="4"> 
+			<thead>
+				<tr>
+					<td>Id</td>
+					<td>Nome</td>
+					<td>CPF</td>
+					<td>RG</td>
+					<td>Tel</td>
+					<td>Email</td>
+				</tr>
+			</thead>
+			<tbody id="tabela">
+
+			</tbody>
+		</table>	
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+           <ul>
+	            <li><a href="#page" class="ui-icon-nodisc" data-iconshadow="false" data-icon="home">Home</a></li>
+	            <li><a href="#page2" class="ui-icon-nodisc" data-iconshadow="false" data-icon="bars">Lista</a></li>
+	            <li><a href="#nomeid" class="ui-icon-nodisc" data-iconshadow="false" data-icon="grid">Exemplo #1</a></li>
+	            <li><a href="#nomeid" class="ui-icon-nodisc" data-iconshadow="false" data-icon="filme">Exemplo #2</a></li>
+           </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+		
+    </body>
+</html>
+
+<script>
+	
+	function salvar(){
+		
+		var formula = $('#formCliente').serialize();
+		
+		$.ajax({
+		
+			type: 'POST',
+			data: formula,
+			url : 'http://localhost:8888/conexao-app/cadastro.php',
+			success:function(data){
+				
+				if(data == '' || data == 0){
+					alert('Ocorreu um erro no banco de Dados');
+					window.location = "";
+				}
+				
+				if(data == 1){
+					alert('Registro salvo com sucesso');
+					window.location = "";
+				}
+			}
+		
+		});
+		
+	}
+	
+</script>
+	<script>
+
+		$('#tabela').empty(); //Limpando a tabela
+		$.ajax({
+			type:'post',		//Definimos o método HTTP usado
+			dataType: 'json',	//Definimos o tipo de retorno
+			url: 'http://localhost:8888/conexao-app/getDados.php',//Definindo o arquivo onde serão buscados os dados
+			success: function(dados){
+				for(var i=0;dados.length>i;i++){
+					//Adicionando registros retornados na tabela
+					$('#tabela').append('<tr><td>'+dados[i].id+'</td><td>'+dados[i].nome+'</td><td>'+dados[i].cpf+'</td><td>'+dados[i].rg+'</td><td>'+dados[i].tel+'</td><td>'+dados[i].email+'</td></tr>');
+				}
+			}
+		});
+	</script>
+
+
