@@ -10,11 +10,11 @@ As técnologias que utilizei foram:
 
 1.CADASTRO
 
-![alt tag](http://fs5.directupload.net/images/150930/xoexogq6.png)
+![alt tag](https://raw.githubusercontent.com/hllmweb/meu-app/master/screen-cadastro.png)
 
 2.LISTAGEM
 
-![alt tag](http://fs5.directupload.net/images/150930/xtuv4vpx.png)
+![alt tag](https://raw.githubusercontent.com/hllmweb/meu-app/master/screen-listagem.png)
 
 
 
