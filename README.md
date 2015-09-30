@@ -19,7 +19,7 @@ As técnologias que utilizei foram:
 
 
 # RECOMENDAÇÕES & DICAS #
-Todo os arquivos e conteúdo pode ser distribuido e aproveitado para ser usado como fonte de estudo. 
+Todo os arquivos e conteúdo podem ser aproveitados para ser usado como fonte de estudo. 
 
  * Alterar o código fonte não é proibido :P
  * Contribua!
