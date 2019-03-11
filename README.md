@@ -1,4 +1,4 @@
-# Meu primeiro app  #
+# App  #
 
 As técnologias que utilizei foram: 
 
